@@ -1,9 +1,11 @@
 import json
 
+FILE_PATH = './static/store.json'
+
 
 class Dao:
     def __init__(self):
-        with open('./store.json') as f:
+        with open(FILE_PATH) as f:
             self.entities = json.load(f)
 
     def get_all(self):
@@ -14,5 +16,5 @@ class Dao:
 
     def set_entities(self, entity_type, entities):
         self.entities[entity_type] = entities
-        with open('./store.json', 'w') as f:
+        with open(FILE_PATH, 'w') as f:
             json.dump(self.entities, f)
