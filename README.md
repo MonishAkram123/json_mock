@@ -47,7 +47,8 @@ Entities are stored in and store.json file. which initially is and empty json ob
 added/modified/deleted, the store.json file gets updated.
 
 ### APIs
-all APIs are provided below (change host address with correct endpoint).
+all APIs are provided below. Currently the app is deployed on: `https://floating-journey-81829.herokuapp.com` 
+to use the APIs, replace {{HOST_ADDR}} with the host provided.
 #### get all entities
 Get all entities for an entity_type
 
