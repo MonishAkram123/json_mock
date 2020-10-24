@@ -1,2 +1,5 @@
 Django==1.11.29
+djangorestframework==3.9.4
+funcsigs==1.0.2
 pytz==2020.1
+six==1.15.0
