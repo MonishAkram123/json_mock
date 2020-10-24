@@ -35,3 +35,11 @@ def entities(request, entity_type):
         return handler.add_entities(entity_type, request.body)
 
     return HttpResponseNotAllowed("")
+
+
+@csrf_exempt
+def all(request):
+    if request.method == METHOD_GET:
+        return handler.get_all()
+
+    return HttpResponseNotAllowed("")

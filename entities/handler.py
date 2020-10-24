@@ -70,6 +70,10 @@ class Handler:
         except (AssertionError, InvalidEntity) as e:
             return HttpResponseBadRequest(content=e.message)
 
+    def get_all(self):
+        entities = self.controller.get_all()
+        return JsonResponse(entities, safe=False)
+
     @staticmethod
     def _validate_and_get_entity_type(entity_type):
         assert entity_type is not None, "entity_type is None"
