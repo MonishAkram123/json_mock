@@ -1,17 +1,17 @@
 # json_mock
 
-# Description
+## Description
 json_mock is a mock server to mock json objects. each object is associated with an entity type
 
 
-# Definitions
+## Definitions
 
-## Entity Type
+### Entity Type
 
-json_mock servers support of multiple type of entities. An entity_type is a list of entities which
-are similar by their type
+json_mock serves support for multiple type of entities. An entity_type is a list of entities which
+are similar by their type.
 
-#### example
+##### example
 ```
 {
   "posts": [{
@@ -37,18 +37,18 @@ are similar by their type
 }
 ```
 
-## Entity
-An entity is an object that holds some information. every entity has a id field. The id field servers as a primary key
+### Entity
+An entity is an object that holds some information. every entity has an id field. The id field servers as a primary key
 for a particular entity_type.
 
 
-# store.json
-Entities are stored in and store.json file. which initially is and empty json object. with every new object
+## store.json
+Entities are stored in store.json file. which initially is and empty json object. With every new object
 added/modified/deleted, the store.json file gets updated.
 
-### APIs
-all APIs are provided below. Currently the app is deployed on: `https://floating-journey-81829.herokuapp.com` 
-to use the APIs, replace {{HOST_ADDR}} with the host provided.
+## APIs
+all APIs are provided below. Currently the app is deployed on: `https://floating-journey-81829.herokuapp.com`. 
+To use the APIs, replace {{HOST_ADDR}} with the host provided.
 #### get all entities
 Get all entities for an entity_type
 
