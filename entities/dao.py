@@ -16,6 +16,7 @@ class Dao:
         return self.entities.get(entity_type, [])
 
     def set_entities(self, entity_type, entities):
+        self._load_entities()
         self.entities[entity_type] = entities
         with open(FILE_PATH, 'w') as f:
             json.dump(self.entities, f)
